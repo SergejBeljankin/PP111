@@ -18,9 +18,7 @@ public class Util {
         Connection connect = null;
         try{
             connect = DriverManager.getConnection(DbUrl, DbUserName, DbPass);
-            if(!connect.isClosed()){
-                System.out.println("Удачное соединение");
-            }
+
         } catch (SQLException e){
             e.getStackTrace();
         }
